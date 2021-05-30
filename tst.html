@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+<html>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta content="width=device-width,initial-scale=1,user-scalable=no" name="viewport">
+<body style="background-color: white;">
+    <script type="text/javascript">
+        function jsCallNative(x) {
+           alert(x);
+        }
+        function init() {
+            window.webkit.messageHandlers.init.postMessage('initparam');
+        }
+    </script>
+    
+    <button type="button" onclick = "jsCallNative('init')" style="width:100%; height:30px;"/>init</button>
+    <button type="button" onclick = "jsCallNative('isJsApiSupported')" style="width:100%; height:30px;"/>isJsApiSupported</button>
+    <button type="button" onclick = "jsCallNative('setAppMessageCardShareData')" style="width:100%; height:30px;"/>setAppMessageCardShareData</button>
+    <button type="button" onclick = "jsCallNative('setCustomShareData')" style="width:100%; height:30px;"/>setCustomShareData</button>
+    <button type="button" onclick = "jsCallNative('setFloatIconAndTitle')" style="width:100%; height:30px;"/>setFloatIconAndTitle</button>
+
+    <button type="button" onclick = "jsCallNative('getUserOpenId')" style="width:100%; height:30px;"/>getUserOpenId</button>
+    <button type="button" onclick = "jsCallNative('getUserInfo')" style="width:100%; height:30px;"/>getUserInfo</button>
+    <button type="button" onclick = "jsCallNative('getUserLanguage')" style="width:100%; height:30px;"/>getUserLanguage</button>
+    <button type="button" onclick = "jsCallNative('getGroupInfo')" style="width:100%; height:30px;"/>getGroupInfo</button>
+    <button type="button" onclick = "jsCallNative('hideTitleBar')" style="width:100%; height:30px;"/>hideTitleBar</button>
+    <button type="button" onclick = "jsCallNative('hideNagivationBar')" style="width:100%; height:30px;"/>hideNagivationBar</button>
+    <button type="button" onclick = "jsCallNative('hideMenuItems')" style="width:100%; height:30px;"/>hideMenuItems</button>
+    <button type="button" onclick = "jsCallNative('closeWindow')" style="width:100%; height:30px;"/>closeWindow</button>
+    <button type="button" onclick = "jsCallNative('scanQRCode')" style="width:100%; height:30px;"/>scanQRCode</button>
+    <button type="button" onclick = "jsCallNative('requestPayment')" style="width:100%; height:30px;"/>requestPayment</button>
+</body>
+</html>
+
+<!-- //[userController addScriptMessageHandler:self name:@"init"];
+//[userController addScriptMessageHandler:self name:@"isJsApiSupported"];
+//[userController addScriptMessageHandler:self name:@"setAppMessageCardShareData"];
+//[userController addScriptMessageHandler:self name:@"setCustomShareData"];
+//[userController addScriptMessageHandler:self name:@"setFloatIconAndTitle"];
+//[userController addScriptMessageHandler:self name:@"getUserOpenId"];
+//
+//[userController addScriptMessageHandler:self name:@"getUserInfo"];
+//[userController addScriptMessageHandler:self name:@"getUserLanguage"];
+//[userController addScriptMessageHandler:self name:@"getGroupInfo"];
+//[userController addScriptMessageHandler:self name:@"hideTitleBar"];
+//[userController addScriptMessageHandler:self name:@"hideNagivationBar"];
+//[userController addScriptMessageHandler:self name:@"hideMenuItems"];
+//
+//[userController addScriptMessageHandler:self name:@"closeWindow"];
+//[userController addScriptMessageHandler:self name:@"scanQRCode"];
+//[userController addScriptMessageHandler:self name:@"requestPayment"]; -->
